@@ -1,0 +1,15 @@
+.gallery.row {
+    margin-top: 80px;
+    max-width: 1240px;
+    margin: 24px auto;
+    padding: 0 30px;
+    position: relative;    
+}
+
+.my-gallery figure {
+    float: left;
+}
+
+.my-gallery figcaption {
+    display: none;
+}
