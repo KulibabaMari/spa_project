@@ -1,0 +1,253 @@
+/*==============================================
+    main-message-therapy
+===============================================*/
+
+.main-message-therapy .breadcrumb-area {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 115px;
+    padding-bottom: 110px;
+    position: relative;
+    z-index: 1;
+}
+
+.main-message-therapy .breadcrumb-area::before {
+    background: rgba(44, 203, 56, 0.80) none repeat scroll 0 0;
+    background-position: center top;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.main-message-therapy .breadcrumb-area .text-contain h1 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 50px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+ .breadcrumb-bottom-area {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 18px 0 15px;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+ .breadcrumb-bottom-area ul {
+    padding-right: 15px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: 50px;
+}
+
+.breadcrumb-bottom-area .nav-title li{
+    color: #2acb35;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 6px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.breadcrumb-bottom-area .nav-title li a{
+    text-decoration: none;
+    color: #2acb35;
+}
+
+
+/*==============================================
+    stone-content
+===============================================*/
+
+
+.stone-content{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.stone-content .text,
+.stone-content .img  {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+
+.stone-content .stone-holder .text {
+    margin: 0px 20px;
+    line-height: 34px;
+    font-size: 32px;
+    color: hsl(80, 70%, 55%);
+    text-shadow: -1px -1px 0 hsl(80, 70%, 35%),
+                 -2px -2px 1px hsl(80, 70%, 35%);
+    
+}
+
+.stone-content .features{
+  margin-top: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.stone-content .features h1{
+    color: #404040;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0 0 9px;
+}
+
+.stone-content .features p {
+    color: #888888;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 40px 0;
+    line-height: 26px;
+    width: 70%;
+    display: inline-block;
+
+}
+
+.stone-content .advantages {
+  text-align: left;
+}
+
+.stone-content .advantages li{
+    line-height: 60px;
+    font-weight: 500;
+    color: #888888;
+    font-size: 18px;
+}
+
+.stone-content .advantages li:before{
+    content: url("../images/favicon.png");
+    display: inline-block;
+    padding-right: 8px;
+    line-height: 40px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+
+}
+/*==============================================
+    wrap pricing
+===============================================*/
+
+.stone-content .wrap {
+  margin: 50px auto 0;
+  overflow: hidden;
+   font-family: 'Poppins', sans-serif;
+   padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+} 
+
+.stone-content .wrap h1{
+    color: #404040;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0 0 9px;
+    text-align: center;
+}
+
+.stone-content .wrap .box {
+  width: 30%;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.stone-content .top {
+  background: #2acb35;
+  padding: 20px;
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.stone-content .wrap p {
+  margin: 0px 0px 10px;
+}
+
+.stone-content .title {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.stone-content .price {
+  font-size: 70px;
+  font-weight: bold;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+}
+
+.stone-content sup {
+  font-size: 24px;
+  position: relative;
+  top: -15px;
+  color: #6eaca7;
+}
+
+.stone-content span {
+    font-size: 16px;
+    color: #6eaca7;
+    text-transform: uppercase;
+}
+
+.stone-content .button {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  border: 1px solid white;
+  display: inline-block;
+  padding: 6px 12px;
+  line-height: 1.5;
+  text-align: center;
+  border-radius: 4px;
+  transition: 0.4s linear;
+}
+
+.stone-content .button:hover {
+  color: gold;
+  border-color: white;
+}
+
+.stone-content .bottom {
+  padding: 20px 20px 40px;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+}
+
+.stone-content .box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.stone-content .box li {
+  border-bottom: 1px solid #e3e3e3;
+  color: #6eaca7;
+  font-size: 16px;
+  line-height: 40px;
+}
