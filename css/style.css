@@ -1,0 +1,1318 @@
+/*body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #888888;
+    line-height: 24px;
+    font-weight: 400;
+*/
+
+
+/*** 
+=============================================
+    Top bar area style
+=============================================
+***/
+.top-bar-area {
+    position: relative;
+    background: #222426;
+    padding: 10px 0 10px;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+}
+
+.top-bar-area .container {
+	display: block;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.left {
+    float: left;
+    width: 45%; 
+}
+
+.right{
+    float: right;
+    text-align: right;
+}
+
+.left ul li{
+    display: inline-block;
+    padding-right: 15px;
+    color: #888888;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.top-bar-area .container ul li:before{
+	color: #2acb35;
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    padding-right: 8px;
+}
+
+.top-bar-area .container ul {
+	display: inline-block;
+	line-height: 32px;
+}
+
+.top-bar-area .container ul.address {
+	vertical-align: top;
+}
+
+.top-bar-area .container ul li.bar-phone:before{
+	content: url("../images/tel.png");
+}
+
+.top-bar-area .container ul li.bar-email:before{
+	content: url("../images/email.png");
+}
+
+.top-bar-area .container ul li.bar-address:before{
+	content: url("../images/location.png");
+}
+
+.top-bar-area .container .left ul li:last-child {
+	border-left: 1px solid #fff;
+    padding-left: 15px;
+    border-right: 0px solid;
+}
+
+.right ul li{
+	display: inline-block;
+    padding-right: 15px;
+    color: #888888;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.right .bar-address{
+	border-right: 1px solid #fff;
+}
+
+.right .social-links{
+	padding-left: 15px;
+}
+
+.right .social-links .icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(../images/sprite.png);
+  overflow: hidden;
+  width: 32px;
+  height: 32px; 
+}
+
+.right .social-links .icon:hover {
+	background-color: #2acb35;
+    border-radius: 5px;
+}
+
+.right .social-links .icon-google-plus {
+  background-position: 0 0;
+}
+
+.right .social-links .icon-facebook {
+  background-position: -36px 0;
+}
+
+.right .social-links .icon-twitter {
+  background-position: -72px 0;
+}
+
+.right .social-links .icon-linkedin {
+  background-position: -108px 0;
+}
+
+.right .social-links .icon-pinterest {
+  
+  background-position: -144px 0;
+}
+
+
+/*==============================================
+    Mainmenu Area Css
+===============================================*/
+
+header {
+	display: block;
+	color: white;
+	height: 50px;
+}
+
+nav {
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: left;
+    z-index: 10;
+}
+
+nav .logo {
+ 	height: 50px;
+	width: 150px;
+	position: relative;
+}
+
+nav .logo div {
+    background: white;
+    position: absolute;
+    top: -30px;
+    width: 130px;
+    height: 150px;
+    border-radius: 50%;
+    /* border-bottom-left-radius: 50% 25%; */
+    /* border-bottom-right-radius: 50% 25%; */
+    /* border-top-left-radius: 50% 25%; */
+    /* border-top-right-radius: 50% 25%; */
+    padding: 5px;	
+}
+
+nav .logo div img {
+	height: 100%;
+	width: 100%;
+}
+
+nav .logo img {
+    position: absolute;
+    animation: turn 2s infinite;
+}
+
+nav .front{
+    z-index: 2;
+    backface-visibility: hidden;
+
+}
+@keyframes turn{to{ 
+    transform: rotateY(360deg);
+}
+}
+
+nav  ul.main {
+    position: relative;
+    left: 50%;    
+ }
+
+nav ul.main > li {
+ 	display: inline-block;
+ 	width: 130px;
+}
+
+ nav li.dropdown ul {
+ 	display: none;
+    background-color: white;
+ }
+
+ nav li.dropdown ul li {
+    width: 250px;
+ }
+
+ nav ul li a {
+ 	display: block;
+     text-decoration: none;
+     text-align: center;
+    white-space: nowrap;
+    color: #000;
+	font-weight: 700;
+	overflow: hidden;
+	line-height: 50px;
+	padding: 0 15px;
+	text-transform: uppercase;
+}
+
+ nav ul li a:hover {
+ 	color: #2acb35;
+ }
+
+ nav li:hover ul {
+ 	display: block; 
+ 	position: absolute;
+ 	border: 1px solid #000;
+}
+
+ nav li:hover li {
+ 	float: none;
+ }
+
+ nav li:hover a {
+ 	color:  #2acb35;
+ }
+
+ nav li.dropdown ul li a {
+    border: 1px solid transparent;
+ }
+
+ nav li:hover li a:hover {
+ 	background: green;
+ 	border-top:1px solid #000;
+    border-bottom:1px solid #000;
+ 	color: white;
+ }
+
+ nav li:hover li:first-child a:hover {
+    background: green;
+    border-top:1px solid transparent;
+    color: white;
+ }
+ nav li:hover li:last-child a:hover {
+    background: green;
+    border-bottom:1px solid transparent;
+    color: white;
+ }
+
+
+/*==============================================
+  Video Area Css
+===============================================*/
+
+
+#video-bg{
+	overflow: hidden;
+    z-index: -100;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 40%;
+}
+
+#video-bg video{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#video-bg .overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    z-index: 4;
+}
+
+#video-bg .overlay h1 {
+    color: #2acb35;
+    font-family: 'Courgette', cursive;
+    line-height: 40px;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+#video-bg .overlay h2 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Courgette', cursive;
+}
+
+#video-bg .overlay h3 {
+    color: white;
+    line-height: 26px;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 0px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+a.button {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    transition: all 500ms ease !important;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block !important;
+    border-radius: 30px;
+    padding: 14px 40px 14px;    
+    background: #2acb35;
+    border: 2px solid #2acb35;
+    color: #ffffff;
+}
+
+.clear {
+	clear: both;
+}
+/*** 
+=============================================
+    Welcome Area style
+=============================================
+***/
+
+.welcome-area {
+	padding-top: 40px;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container h1 {
+	color: #404040;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0 0 9px;
+}
+
+.left-colomn {
+	float: left;
+	width: 50%;
+}
+
+.left-colomn h4 {
+	font-size: 18px;
+    line-height: 26px;
+    font-family: 'Courgette', cursive;
+    color: #888888;
+    margin-top: -4px;
+}
+
+.welcome-area .left-colomn .inner-content {
+    display: block;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.inner-content div {
+	float: left;
+    padding-right: 30px;
+}
+
+.inner-content h3 {
+	margin: 0 0 15px;
+}
+
+.left-colomn-bottom {
+	margin: 30px 0 0;
+    position: relative;
+}
+.left-colomn-bottom a {
+    float: left;
+    margin: 0 50px 0 0;
+}
+
+.left-colomn-bottom .title {
+	padding-top: 10px;
+}
+
+.left-colomn-bottom .title h2 {
+	font-size: 36px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.left-colomn-bottom .title h2 span {
+	color: #2acb35;
+}
+
+.right-colomn {
+    float: right;
+    width: 50%;
+}
+
+.right-colomn img {
+	vertical-align: middle;
+	max-width: 100%;
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: -70px;    
+}
+
+.welcome-area .item1, .welcome-area .item2 { 
+    margin-bottom: 10px;
+}
+.welcome-area .item1 h3, .welcome-area .item2 h3 {
+    color: silver;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/*** 
+=============================================
+    procedures Area style
+=============================================
+***/
+.procedures-area {
+    background: url("../images/testimonial-bg.jpg");
+    padding-top: 80px;
+    position: relative;
+}
+
+.procedures-area .arrow {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    top: 0px;
+}
+
+.procedures-area .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sec-title {
+    margin-top: -6px;
+    padding-bottom: 36px;
+    position: relative;
+    text-align: center;
+}
+
+.sec-title h1 {
+    color: #404040;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0 0 9px;
+}
+
+.procedures-area .row {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.procedures-area .row .col1, 
+.procedures-area .row .col2, 
+.procedures-area .row .col3, 
+.procedures-area .row .col4 {
+    display: inline-block;
+}
+
+
+.row figure {
+  padding: 10px; 
+  display: block; 
+  margin: 0 10px 10px 0; 
+  text-align: center; 
+}
+
+.row figcaption a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #888888;
+}
+
+/*** 
+=============================================
+    choosing Area style
+=============================================
+***/
+  .choosing-area {
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+ .choosing-area .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.choosing-area .container h1 {
+    margin-top: -6px;
+    padding-bottom: 36px;
+    position: relative;
+    text-align: center;
+}
+
+.container .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.container .row ul {
+    width: 80%;
+    margin: 0 auto;
+}
+.container .row ul li {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    margin-right: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    margin-bottom: 35px;
+}
+
+.container .row ul li:before {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 30px;
+    height: 1px;
+    border: 1px dashed #e9e9e9;
+    content: "";
+}
+
+.container .row ul li:after {
+    position: absolute;
+    bottom: 30px;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: initial;
+    border: 1px dashed #e9e9e9;
+    content: "";
+}
+
+.choosing-area ul:last-child li:before,
+.choosing-area li:last-child:after{
+    display: none;
+}
+
+.container .row ul li .ico-holder {
+    float:left;
+    width: 64px;
+}
+
+.container .row ul li .text-holder {
+    margin-left: 90px;
+}
+
+.container .row ul li .text-holder h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    min-height: 45px;
+}
+
+/*** 
+=============================================
+    Testimonial Area style
+=============================================
+***/
+.testimonials {
+    background: url("../images/testimonial-bg.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+    padding-top: 80px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.testimonials .wrap {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.testimonials .wrap h1 {
+    color: #404040;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0 0 9px;
+}
+
+.testmcolomn {
+    text-align: center;
+}
+
+.testmcolomn > div {
+    width: 30%;
+    display: inline-block;
+    margin: 65px 20px 15px;
+}
+
+.testmcolomn .ico-holder {
+    text-align: center;
+}
+
+.testmcolomn .ico-holder img {
+    border: solid #f2fff3 5px;
+    border-radius: 50%;
+}
+.testmcolomn .ico-holder img:hover {
+    border-color: #2acb35;
+}
+
+.testmcolomn  .text-holder {
+    background: white;
+    padding: 70px 10px 10px;
+    position: relative;
+    top: -50px;
+    z-index: -1;
+}
+
+.testimonials h3 {
+    color: #2acb35;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Courgette', cursive;
+    text-transform: none;
+    margin: 0 0 12px;
+}
+
+.testimonials .text-holder h3:last-child {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px 60px 0;
+    border-top: solid 1px #DDD;
+    font-size: 18px;
+    color: #303030;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+@media (max-width: 375px) {
+    top-bar-area {
+	   display: none;
+    }
+    .top-bar-area-mobi {
+	   display: block;
+    }
+} */
+
+/*** 
+=============================================
+    Appointment-area style
+=============================================
+***/
+.appointment-area {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.quick-contact{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.quick-contact h1 {
+    color: #404040;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0 0 50px;
+    text-align: center;
+    padding-bottom: 36px;
+
+}
+
+.appointment-area .ico-holder-leap {
+    position: absolute;
+    bottom: 0px;
+    right: -50px;
+    z-index: 2;
+}
+
+.appointment-box {
+    position: relative;
+    padding-left: 300px;
+    float: left;
+}
+
+.appointment-box .experince {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 290px;
+    min-height: 340px;
+    background: #f2fff3;
+    border: 3px solid #ebf8ec;
+    z-index: 2;
+    padding: 30px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.appointment-box .experince h3, .appointment-box .experince h3 span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.appointment-box .experince .inner-content {
+    margin: 20% 0;
+    color: #2acb35;
+}
+
+.appointment-box .experince .inner-content h2 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.appointment-box .experince .inner-content h3 { 
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.appointment-box .experince p {
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+    color: silver;
+}
+
+.appointment-box .experince span { 
+    color: #2acb35;
+}
+
+.appointment-box .form {
+    border: 1px solid #f5f4f3;
+    position: relative;
+    top: -40px;
+    left: -40px;
+    margin-right: -40px;
+    padding: 40px 70px 30px;
+    min-height: 420px;
+    width: 530px;
+}
+
+#appointment-form{
+    width: 400px;
+}
+
+.appointment-box .form .input-box input[type="text"], .appointment-box .form .input-box input[type="email"], .appointment-box .form textarea, .appointment-box .form .selectmenu {
+    background: #ffffff;
+    border: 1px solid #f4f4f4;
+    color: #888888;
+    display: block;
+    font-size: 14px;
+    height: 50px;
+    padding: 0 15px;
+    width: 100%;
+    transition: all 500ms ease;
+    box-shadow: none;
+    line-height: 44px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+}
+/*.appointment-box .form .input-box input[type="text"]:focus{
+    border-color: #2acb35;        
+}
+.appointment-box .form .input-box input[type="email"]:focus{
+    border-color: #2acb35;        
+}
+.appointment-box .form textarea:focus{
+    border-color: #2acb35;    
+}
+.appointment-box .form button {
+    width: 100%;
+    padding: 14px 0 13px;
+}*/
+
+
+.appointment-box .form textarea{
+    height: 95px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    margin-top: 23px;
+}
+/*.appointment-box .form .ui-selectmenu-button span.ui-selectmenu-text {
+    display: block;
+    line-height: 18px;
+    overflow: hidden;
+    text-align: left;
+    padding: 15px 15px 15px;
+}*/
+.appointment-box .form button {
+    width: 100%;
+    padding: 14px 0 13px;
+    border: 2px solid #2acb35;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    border-radius: 30px;
+    padding: 12px 30px 12px;
+    /*transition: all 500ms ease;*/
+    color: white;
+    background-color: #2acb35;
+    }
+.appointment-box .form button:hover{
+    background-color: white;
+    color: black;
+}
+.contact-details{
+    float: right;
+    width: 25%;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-details .title h2 {
+    color: #2acb35;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Courgette', cursive;
+}
+
+.contact-details .contact-info li {
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 21px;
+    padding-left: 35px;
+    padding-bottom: 21px;
+    position: relative;
+}
+
+.contact-details .contact-info li {
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 21px;
+    padding-left: 35px;
+    padding-bottom: 21px;
+    position: relative;
+}
+
+.contact-details .contact-info li .icon-holder {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.contact-details .contact-info li .icon-holder span:before {
+    color: #2acb35;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+} 
+
+.contact-details .contact-info li .icon-holder .flaticon-location:before{
+    content: url("../images/location.png");
+}
+
+.contact-details .contact-info li .icon-holder .flaticon-technology:before{
+    content: url("../images/tel.png");
+}
+
+.contact-details .contact-info li .icon-holder .flaticon-note:before{
+    content: url("../images/email.png");
+}
+
+.contact-details .contact-info li .icon-holder .flaticon-clock:before{
+    content: url("../images/clock.png");
+}
+
+/*** 
+=============================================
+    Footer area style
+=============================================
+***/
+
+.footer-area {
+    width: 100%;
+     background:
+        linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+        linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+        linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+        linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+        linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+        linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;;
+    padding-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-area .arrow {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    top: -1px;
+    z-index: 1000;
+}
+
+.footer-area .footer-image-box {
+    position: absolute;
+    left: 15px;
+    bottom: 0px;
+}
+
+.footer-area .footer-image-box img {
+    opacity: 0.3;
+}
+
+.footer-area .footer-logo {
+    margin: 0 auto;
+    width: 150px;
+    height: 200px;
+}
+
+.footer-container {
+}
+
+.footer-container .row {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footer-container .column {
+    width: 32%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-container .row h3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.footer-container .row .our-info p{
+    color: #888888;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-container .row .footer-contact-info {
+    overflow: hidden;
+    display: block;
+    margin: 25px 0 0;
+    color: #888888   
+}
+
+.footer-container .column li a {
+    position: relative;
+    color: #888888;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer-container .column li a:hover {
+    color: #2acb35;
+}
+
+.footer-container .column .footer-contact-info li {
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 17px;
+}
+
+.footer-container .column .footer-contact-info li:before{
+    position: absolute;
+    top: 2px;
+    left: 10px;
+}
+
+.footer-container .column .footer-contact-info li.flaticon-location:before{
+    content: url("../images/location.png");
+}
+
+.footer-container .column .footer-contact-info li.flaticon-technology:before{
+    content: url("../images/tel.png");
+}
+
+.footer-container .column .footer-contact-info li.flaticon-note:before{
+    content: url("../images/email.png");
+}
+
+.footer-container .column .footer-contact-info li div {
+    width: 80%;
+    display: inline-block;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.footer-container .column .bottom {
+    margin-top: 50px;
+}
+
+.footer-container .column .newsletter-box p {
+    color: #888888;
+    font-size: 14px;
+    margin-bottom: 10px;    
+}
+
+.footer-container .column .newsletter-box form.newsletter-form {
+    position: relative;
+ }
+
+.footer-container .column .newsletter-box form.newsletter-form input[type="text"] {
+    background: #151515;
+    color: #7d7a7a;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 45px;
+    letter-spacing: 1px;
+    padding-left: 50px;
+    padding-right: 55px;
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.footer-container .column .newsletter-box form.newsletter-form button {
+    background: #2acb35 none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    height: 45px;
+    padding: 9px 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    -webkit-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;
+    width: 45px;
+}
+
+.footer-container .column .newsletter-box form.newsletter-form input[type="text"],
+.footer-container .column .newsletter-box form.newsletter-form button {
+    outline-color: #2acb35;
+}
+
+.footer-container .column .newsletter-box form.newsletter-form button:after {
+    content: url(../images/airplane.png);
+}
+
+.footer-container .column .working-hours {
+    overflow: hidden;
+    display: block;
+    padding: 0 20px;
+    background: #151515;
+    border: 1px solid #212121;
+    margin-top: -14px;
+     color: #7d7a7a
+}
+
+.footer-container .column .working-hours li{
+    border-bottom: 1px solid #212121;
+    line-height: 40px;
+}
+
+.footer-container .usefull-links {
+    margin: -3px 0 0 20px;
+}
+
+.footer-container .usefull-links li {
+    margin-bottom: 15px;
+}
+
+.footer-container .usefull-links li a {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+.footer-bottom-area {
+    position: relative;
+    width: 100%;
+    display: block;
+    background-color: #000;
+    padding: 30px 0;
+    margin: 40px 0 0 0;
+}
+
+.footer-bottom-area .footer-bottom-left {
+    display: inline-block;
+    float: left;
+}
+
+.footer-bottom-area .footer-bottom-right {
+    display: inline-block;
+    float: right;
+}
+
+.footer-bottom-area .footer-bottom-left .copyright-text {
+    font-size: 14px;
+    color: #555555;
+}
+
+.footer-bottom-area .footer-bottom-left .copyright-text p{
+    margin: 0;
+    color: #888888;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    line-height: 26px;
+}
+
+.footer-bottom-area .footer-bottom-left .copyright-text a {
+    text-decoration: none;
+    color: #2acb35;
+}
+
+.footer-bottom-area .footer-bottom-left .copyright-text a:hover {
+    text-decoration: none;
+    color: #555555
+}
+
+.footer-bottom-area .footer-bottom-right .footer-social-links img{
+    border-radius: 50%;
+}
+
+/* Hamburger */
+.hamburger {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    
+    z-index: 100;
+    
+    -webkit-user-select: none;
+    user-select: none;        
+}
+
+.hamburger input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;        
+}
+
+.hamburger span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+.hamburger span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+.hamburger span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+ .hamburger input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+ .hamburger input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+ .hamburger input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+} 
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+ .hamburger .hamburger-menu
+ {
+    display: none;
+    position: absolute;
+    width: 250px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: white;
+    border: solid 1px black;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ 
+ .hamburger .hamburger-menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+ }
+ 
+ .hamburger .hamburger-menu li a
+ {
+    color: #2acb35; 
+    text-decoration: none;
+}
+ /*
+  * And let's slide it in from the left
+  */
+
+.hamburger input:checked ~ ul
+ {
+     display: block;
+   transform: none;
+ }
+/*---*/
+
